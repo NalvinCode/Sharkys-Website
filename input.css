@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h3{
+    text-shadow: 0px 0px 9px #2c2c2c;
+}
+
+.wood-log{
+    background-image: url('/media/wood-ux.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.wood-log-moo{
+    background-image: url('/media/wood-moo2-ux.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wood-log-moo2{
+    background-image: url('/media/wood-moo-ux.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.team-background{
+    background-image: url('/media/wood-nails.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discord-btn {
+    width: 310px; height: 160px;
+    margin: 0;
+    background: url('/media/png-discord-btn1.png');
+    transition: ease-out 0.1s;
+    background-size: contain;
+    animation-name: discord_btn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.twitter-btn {
+    width: 310px; height: 160px;
+    margin: 0;
+    background: url('/media/png-twitter-btn1.png');
+    background-size: contain;
+    animation-name: twitter_btn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes discord_btn {
+    0%   {background: url('/media/png-discord-btn2.png'); background-size: contain;}
+    50%  {background: url('/media/png-discord-btn1.png'); background-size: contain;}
+    100% {background: url('/media/png-discord-btn2.png'); background-size: contain;}
+  }
+  
+@keyframes twitter_btn {
+    0%   {background: url('/media/png-twitter-btn2.png'); background-size: contain;}
+    50%  {background: url('/media/png-twitter-btn1.png'); background-size: contain;}
+    100% {background: url('/media/png-twitter-btn2.png'); background-size: contain;}
+}
+
+.section-h{
+    @apply md:text-6xl
+}
